@@ -1,4 +1,4 @@
-<html>
+<html ng-app="formlist">
 
 <head>
 <title>The Form and the List</title>
@@ -40,15 +40,15 @@
 <main class="flex" ng-controller="formlistController as formlist">
     <div class="form">
         <label for="fname">First Name: </label>
-        <input id="fname" />
+        <input id="fname" ng-model="formlist.fname" ng-keydown="formlist.noDigits($event)"/>
         <br>
         <label for="lname">Last Name: </label>
-        <input id="lname" />
+        <input id="lname" ng-model="formlist.lname" ng-keydown="formlist.noDigits($event)"/>
         <br>
         <label for="age">Your Age: </label>
-        <input id="age" />
+        <input id="age" ng-model="formlist.age"  ng-keydown="formlist.onlyDigits($event)"/>
         <br>
-        <button type="button" class="button">Add Yourself</button>
+        <button type="button" class="button" ng-click="formlist.add()">Add Yourself</button>
     </div>
 
     <div class="table" >
@@ -75,42 +75,12 @@
 </main>
 
 
-<script>
-function noDigits(ev){ return testDigits(ev, false) }
-function onlyDigits(ev){ return testDigits(ev, true) }
-function testDigits(e, allow){
-    if (
-        // Allow: Delete, Backspace, Tab, Escape, Enter
-        [46, 8, 9, 27, 13].indexOf(e.keyCode) !== -1 || 
-        // Allow: Ctrl + A/C/V/ X
-        ( [65, 67, 86, 88].indexOf(e.keyCode) !== -1 && e.ctrlKey ) || 
-        // Home, End, Left, Right
-        (e.keyCode >= 35 && e.keyCode <= 39) 
-    ) {
-        return;  // let it happen, don't do anything
-    }
-
-    if (/^\d+$/.test(e['key']) != allow) {
-        e.preventDefault();
-    }
-}</script>
 
 
 
 
-<!--<script src="js-formlist.js"></script>-->
-
-
-
-<!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="jq-formlist.js"></script>-->
-
-
-
-<script src="js-ninja.js"></script>
-
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+<script src="ng-formlist.js"></script>
 
 
 </body>
