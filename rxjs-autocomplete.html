@@ -1,0 +1,50 @@
+
+
+<html>
+
+    <head>
+    <title>The Form and the List</title>
+    <style>
+        body{max-width: 70%; margin: 100px auto;}
+        .flex{display: flex;justify-content: space-around;flex-wrap: wrap;}
+        label{display: inline-block; width: 90px;padding: 5px 0;}
+        button{margin-top: 15px;}
+        td {padding: 6px 20px;}
+        section {width: 25%;padding-bottom: 50px;}
+        span {width: 100px;border: 1px dotted deeppink;margin: 10px 0;}
+
+div{display: flex;flex-wrap: wrap;justify-content: space-between;border: 3px dotted darkblue;padding: 10px;}
+input{margin-bottom: 15px;}
+    </style>
+    </head>
+    <body>
+    
+    <main class="flex" >
+       
+        <section id="try-js"><input placeholder="just js" /><div></div></section>
+        <section id="rx-sub"><input placeholder="rx subscribe" /><div></div></section>
+        <section id="rx-sub-ajax"><input placeholder="rx subscribe from rx ajax" /><div></div></section>
+        <section id="rx-debounce"><input placeholder="rx debounce" /><div></div></section>
+        <section id="rx-sm"><input placeholder="rx switchMap" /><div></div></section>
+        <section id="rx-sm">
+            <a href="https://blog.strongbrew.io/building-a-safe-autocomplete-operator-with-rxjs/"
+                target="_blank">on Prod more solutions</a>
+        </section>
+        <section id="rx-distinct"><input placeholder="rx distinctUntilChanged" /><div></div></section>
+
+    </main>
+    
+    
+    
+    
+    <script>
+        /*An array containing all the country names in the world:*/
+        let countries = ["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua & Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia & Herzegovina","Botswana","Brazil","British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Cayman Islands","Central Arfrican Republic","Chad","Chile","China","Colombia","Congo","Cook Islands","Costa Rica","Cote D Ivoire","Croatia","Cuba","Curacao","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Falkland Islands","Faroe Islands","Fiji","Finland","France","French Polynesia","French West Indies","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea","Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kiribati","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Myanmar","Namibia","Nauro","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","North Korea","Norway","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania","Russia","Rwanda","Saint Pierre & Miquelon","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Korea","South Sudan","Spain","Sri Lanka","St Kitts & Nevis","St Lucia","St Vincent","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor L'Este","Togo","Tonga","Trinidad & Tobago","Tunisia","Turkey","Turkmenistan","Turks & Caicos","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States of America","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.4.0/rxjs.umd.min.js"></script>
+    <script src="rxjs-autocomplete.js"></script>
+    
+    
+    </body>
+    </html>

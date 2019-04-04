@@ -19,3 +19,22 @@ Current versions available
 * Ninja JS, showing how can i use Native JS today super efficient
 * angularjs
 
+
+
+
+# the RXJS Javascript and AutoComplete tutorial
+
+* Showing how to use RXJS 6 with Native JS
+* The Classic AutoComplete example by steps
+    * JS array filter
+    * subscribe on keypress (input) event
+    * the above with another subscribe to (mimic of) ajax
+    * and then showing the power of operators
+        * deboundeTime
+        * switchMap
+        * distinctUntilChanged
+        * tap
+
+
+[see rxjs app](https://bresleveloper.github.io/TheFormAndTheList/rxjs-autocomplete.html)
+
